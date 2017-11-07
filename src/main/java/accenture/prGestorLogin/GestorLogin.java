@@ -11,6 +11,10 @@ public class GestorLogin {
 		this.repo = repo;
 		numFallos = 0;
 	}
+	
+	int getNumFallos() {
+		return numFallos;
+	}
 
 	public void acceder(String usuario, String clave) {
 		ICuenta cuenta = repo.buscar(usuario);
