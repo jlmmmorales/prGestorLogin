@@ -36,7 +36,7 @@ public class GestorLogin {
 					usuarioAnterior = usuario;
 				}
 				numFallos++;
-				if (numFallos == MAX_FALLOS) {
+				if (numFallos  MAX_FALLOS) {
 					cuenta.bloquearCuenta();
 				}
 			}
